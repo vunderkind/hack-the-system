@@ -5,6 +5,9 @@ Summary: CLI tool to hack the system
 Requires-Python: >=3.13
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
+Requires-Dist: fastapi~=0.116.1
+Provides-Extra: dev
+Requires-Dist: fastapi[standard]; extra == "dev"
 Dynamic: license-file
 
 # Hack the system

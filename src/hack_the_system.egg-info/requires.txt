@@ -1,0 +1,4 @@
+fastapi~=0.116.1
+
+[dev]
+fastapi[standard]

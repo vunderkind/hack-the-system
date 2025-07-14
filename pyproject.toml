@@ -4,6 +4,15 @@ version = "1.0.0"
 description = "CLI tool to hack the system"
 readme = "README.MD"
 requires-python = ">=3.13"
+dependencies = [
+    "fastapi ~= 0.116.1"
+]
+
+[project.optional-dependencies]
+dev = [
+    "fastapi[standard]"
+]
+
 
 [build-system]
 requires = ["setuptools"]
