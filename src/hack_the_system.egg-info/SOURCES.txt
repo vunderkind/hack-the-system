@@ -1,0 +1,9 @@
+LICENSE.txt
+README.MD
+pyproject.toml
+src/hack_the_system.egg-info/PKG-INFO
+src/hack_the_system.egg-info/SOURCES.txt
+src/hack_the_system.egg-info/dependency_links.txt
+src/hack_the_system.egg-info/top_level.txt
+src/hacks/__init__.py
+src/hacks/__main__.py
