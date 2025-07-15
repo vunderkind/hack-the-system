@@ -9,47 +9,47 @@ Hack the System is a command-line tool that evaluates a candidate’s CV against
 
 ## Table of Contents
 
-1. [Features](#features)  
-2. [Prerequisites](#prerequisites)  
-3. [Installation](#installation)  
-4. [Usage](#usage)  
-5. [Development](#development)  
-6. [License](#license)  
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Development](#development)
+6. [License](#license)
 
 ---
 
 ## Features
 
-- Deterministic rule-based scoring  
-- Configurable weightings for keywords, formatting, and experience  
-- Exportable JSON or human-friendly console output  
-- Extensible plugin hooks for custom ATS rules  
+- Deterministic rule-based scoring
+- Configurable weightings for keywords, formatting, and experience
+- Exportable JSON or human-friendly console output
+- Extensible plugin hooks for custom ATS rules
 
 ---
 
 ## Prerequisites
 
-- Python ≥ 3.7 (recommended: 3.9–3.13)  
-- `pip` package installer  
-- (Optional) Virtual environment tool, e.g. `venv` or `virtualenv`  
+- Python ≥ 3.7 (recommended: 3.9–3.13)
+- `pip` package installer
+- (Optional) Virtual environment tool, e.g. `venv` or `virtualenv`
 
 ---
 
 ## Installation
 
-1. Clone the repository  
+1. Clone the repository
    ```bash
    git clone https://github.com/your-org/hack-the-system.git
    cd hack-the-system
    ```
 
-2. (Optional) Create & activate a virtual environment  
+2. (Optional) Create & activate a virtual environment
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
    ```
 
-3. Install in editable mode (pulls in FastAPI and other dependencies)  
+3. Install in editable mode (pulls in FastAPI and other dependencies)
    ```bash
    pip install --upgrade pip setuptools wheel
    pip install -e .
@@ -95,35 +95,35 @@ print(result)
 
 ## Development
 
-1. **Create & activate your virtual environment**  
+1. **Create & activate your virtual environment**
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
    ```
 
-2. **Install development dependencies**  
+2. **Install development dependencies**
    ```bash
    pip install -e ".[dev]"
    ```
 
-3. **Run tests**  
+3. **Run tests**
    ```bash
    pytest --strict-markers
    ```
 
-4. **Lint & format**  
+4. **Lint & format**
    ```bash
    black .
    flake8
    ```
 
-5. **Start a local server (FastAPI UI)**  
+5. **Start a local server (FastAPI UI)**
    ```bash
    uvicorn hacks.api:app --reload
    ```
    Visit <http://localhost:8000> to experiment with the API frontend.
 
-6. **Building a release**  
+6. **Building a release**
    ```bash
    python3 -m build
    twine upload dist/*
